@@ -1,3 +1,9 @@
+springdoc:
+  api-docs:
+    path: /api-documentation
+  swagger-ui:
+    path: /documentation
+    
 spring:
   jackson:
     deserialization:
