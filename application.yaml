@@ -1,0 +1,14 @@
+spring:
+  jackson:
+    deserialization:
+      fail-on-unknown-properties: true
+  liquibase:
+    enabled: true    
+    change-log: classpath:db/liquibase/master.yml  
+  sleuth:
+    propagation:
+      type: B3,W3C
+    opentracing:
+      enabled: true
+    zipkin:
+      base-url: ${ZIPKIN_BASE_URL:http://localhost:9411}
