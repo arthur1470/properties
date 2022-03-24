@@ -1,20 +1,7 @@
 spring:  
   application:
     name: auth
-  jackson:
-    deserialization:
-      fail-on-unknown-properties: true
   datasource:
     url: ${DATABASE_URL:jdbc:postgresql://localhost:5432/postgres}
     username: ${DATABASE_USERNAME:postgres}
     password: ${DATABASE_PASSWORD:postgres}
-  liquibase:
-    enabled: true    
-    change-log: classpath:db/liquibase/master.yml  
-  sleuth:
-    propagation:
-      type: B3,W3C
-    opentracing:
-      enabled: true
-    zipkin:
-      base-url: ${ZIPKIN_BASE_URL:http://localhost:9411}      
