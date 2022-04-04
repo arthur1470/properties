@@ -7,3 +7,6 @@ spring:
     password: ${DATABASE_PASSWORD:postgres}
   liquibase:
     default-schema: auth
+
+TOKEN:
+  PASSWORD: 'senhamegaultrasecreta'
