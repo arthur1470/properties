@@ -1,5 +1,7 @@
 server:
   port: 9004
+  servlet:
+    context-path: /auth
 
 spring:    
   datasource:
@@ -8,10 +10,6 @@ spring:
     password: ${DATABASE_PASSWORD:postgres}
   liquibase:
     default-schema: auth
-
-server:
-  servlet:
-    context-path: /auth
 
 TOKEN:
   PASSWORD: 'senhamegaultrasecreta'
