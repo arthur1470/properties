@@ -2,6 +2,8 @@ server:
   port: 8000
 
 spring:
+  main:
+    web-application-type: reactive
   application:
     name: gateway
   cloud:
@@ -9,8 +11,6 @@ spring:
       discovery:
         locator:
           enabled: true
-          lower-case-service-id: true
-  main:
-    web-application-type: reactive
+          lower-case-service-id: true  
 TOKEN:
   PASSWORD: 'senhamegaultrasecreta'
