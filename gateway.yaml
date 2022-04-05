@@ -10,3 +10,5 @@ spring:
         locator:
           enabled: true
           lower-case-service-id: true
+TOKEN:
+  PASSWORD: 'senhamegaultrasecreta'
