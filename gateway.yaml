@@ -4,10 +4,10 @@ server:
 spring:
   application:
     name: gateway
-  cloud:
-    gateway:
-      discovery:
-        locator:
-          enabled: true
+#   cloud:
+#     gateway:
+#       discovery:
+#         locator:
+#           enabled: true
 TOKEN:
   PASSWORD: 'senhamegaultrasecreta'
