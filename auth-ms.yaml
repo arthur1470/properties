@@ -9,5 +9,9 @@ spring:
   liquibase:
     default-schema: auth
 
+server:
+  servlet:
+    context-path: /auth
+
 TOKEN:
   PASSWORD: 'senhamegaultrasecreta'
